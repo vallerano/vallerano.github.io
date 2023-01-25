@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>{team_name}</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+            h1 {
+                color: {colors};
+            }
+            p {
+                margin: 10px 0;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+                text-align: left;
+            }
+            li {
+                margin: 5px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>{team_name}</h1>
+        <p>Location: {location}</p>
+        <p>Foundation: {foundation}</p>
+        <p>Colors: {colors}</p>
+        <h2>Hierarchy</h2>
+        <p>President: {president}</p>
+        <p>Vice President: {vice_president}</p>
+        <p>CEO: {ceo}</p>
+        <p>Sporting Director: {sporting_director}</p>
+        <p>Press Chief: {press_chief}</p>
+        <h2>Sponsors</h2>
+        <ul>
+"""
+
+for sponsor in sponsors:
+    html += f"<li>{sponsor}</li>"
+
+html += """
+        </ul>
+        <h2>Key Players</h2>
+        <ul>
+"""
+
+for player in players:
+    html += f"<li>{player}</li>"
+
+html += """
+        </ul>
