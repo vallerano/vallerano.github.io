@@ -60,11 +60,29 @@
       <li><span class="role">Press Chief Officier:</span> Simone Strani</li>
     </ul>
   </div>
-  <div class="image-section">
-      <img src="campaccio.jpg" alt="Casa Nostra" class = "team-image">
-  </div>
+  <div class="carousel">
+  <img src="campaccio.jpg" alt="FC Vallerano Team">
+  <img src="divisa.jpg" alt="FC Vallerano Team">
+  <img src="partita.jpg" alt="FC Vallerano Team">
 </div>
-    
+<style>
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  .carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    transition: transform 1s;
+  }
+</style>
+</div>
 <style>
   .container {
     display: flex;
@@ -72,9 +90,6 @@
   .hierarchy-section {
     width: 50%;
     margin-right: 20px;
-  }
-  .image-section {
-    width: 50%;
   }
   /* hierarchy styles */
     <h2>Giocatori Chiave</h2>
