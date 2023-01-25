@@ -50,44 +50,33 @@
     <p>Fondazione: 2020</p>
     <p>Colori Ufficiali: Nero e Verde</p>
     <h2>Composizione Societaria</h2>
-   <ul class="hierarchy">
-  <li><span class="role">President:</span> Lorenzo Sulpizii</li>
-  <li><span class="role">Vice President:</span> Alessio Amatori</li>
-  <li><span class="role">CEO:</span> Samuele Zolarsi</li>
-  <li><span class="role">Sporting Director:</span> Giancarlo De Marzo</li>
-  <li><span class="role">Press Chief Officier:</span> Simone Strani</li>
-</ul>
-
+   <div class="container">
+  <div class="hierarchy-section">
+    <ul class="hierarchy">
+      <li><span class="role">President:</span> Lorenzo Sulpizii</li>
+      <li><span class="role">Vice President:</span> Alessio Amatori</li>
+      <li><span class="role">CEO:</span> Samuele Zolarsi</li>
+      <li><span class="role">Sporting Director:</span> Giancarlo De Marzo</li>
+      <li><span class="role">Press Chief Officier:</span> Simone Strani</li>
+    </ul>
+  </div>
+  <div class="image-section">
+      <img src="campaccio.jpg" alt="Casa Nostra" class = "team-image">
+  </div>
+</div>
+    
 <style>
-  .hierarchy {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  .container {
+    display: flex;
   }
-  .hierarchy li {
-    margin-bottom: 10px;
+  .hierarchy-section {
+    width: 50%;
+    margin-right: 20px;
   }
-  .role {
-    font-weight: bold;
-    color: green;
-    text-transform: uppercase;
+  .image-section {
+    width: 50%;
   }
-</style>
-
-    <img src="campaccio.jpg" alt="Casa Nostra" class = "team-image">
-    <style>
-      .team-image {
-        width: 20%;
-        transition: transform 0.3s;
-      }
-      .team-image:hover {
-        transform: scale(1.1);
-      }
-      .team-image {
-        display: block;
-        margin: 0 auto;
-      }
-    </style>
+  /* hierarchy styles */
     <h2>Giocatori Chiave</h2>
     <ul>
       <li>Antonio Maria di Giulio</li>
